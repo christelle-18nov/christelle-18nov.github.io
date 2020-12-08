@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+html {font-size: 100%;}
+
+
+body{
+	background: #F3EEEA;
+	font-family: "Times New Roman", Times, Cambria, serif;
+    font-size: 13px;
+    background:#FFFAFA;
+}
+
+
+#container{
+	width:71%;
+	margin: 0 auto; 
+	background: #FFFAFA url(img/grille.png);
+}
+
+img{
+	display: block;
+    margin: 0 auto;
+}
+
+.div_title{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1em;
+	letter-spacing: 1px;
+	margin-top: 0;
+}
+
+.div_small_title{
+	font-family: 'Old Standard TT', serif;
+	font-style: italic;
+	font-size: 1em;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/* Sélectionne la première lettre */
+.div_title::first-letter {
+  font-size: 140%;
+}
+
+nav div, section div{
+	border: 1px solid #DDD;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2);
+}
+
+
+
+/*************HEADER****************/
+
+header{
+	margin:20px 0 30px 0;
+}
+
+header span{
+	display: block;
+	text-align: center;
+	font-family: "Fira Sans", serif;
+}
+
+#mrCollison{
+	font-weight: 900;
+	font-size: 2.2em;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	color:#BA1820;
+}
+
+#celebrated{
+	font-weight: bold;
+	font-size: 0.9em;
+	letter-spacing: 1.9px;
+	text-transform: uppercase;
+}
+
+#celebrated::first-letter {
+  font-size: 120%;
+}
+
+#established{
+	font-family: 'Old Standard TT', serif;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+
+hr {
+    border: none;
+    border-top: 3px double gray;
+    overflow: visible;
+    text-align: center;
+    height: 2px;
+}
+
+hr:after {
+    background: #FFFAFA;
+    content: '*A.K.A COLLY';
+    color:black;
+    padding: 0 4px;
+    position: relative;
+    top: -10px;
+}
+
+
+/************* MENU DE NAVIGATION ****************/
+
+nav{
+	display: flex;
+	justify-content:space-around;
+}
+
+nav div{
+	width: 210px;
+	height: 300px;
+	text-align: justify;
+  	line-height: 18px;
+  	padding: 0 10px;  	
+}
+
+nav a:link, nav a:visited {
+	color: #BF2930;
+}
+
+li{
+	list-style: none;
+}
+
+ul{
+	margin-left:-15px;
+}
+
+.lettrine{
+	float: left;
+	font-size: 5em;
+	margin:15px 0 0 0;
+	padding: 0 10px 10px 0;
+	text-indent: 0;
+	color: #BF2930;
+}
+
+/************* SECTION ****************/
+
+#middle{
+	margin: 20px 0 20px 0;
+}
+
+section{
+	display: flex;
+	flex-wrap:wrap;  
+	/* Avec flex-wrap qui vaut wrap, les éléments passent à la ligne.*/
+	justify-content:space-between; 
+	/*Les éléments sont répartis avec le même espacement entre chacun*/
+}
+
+
+section>div{
+	width: 230px;
+	margin-bottom:10px;
+	padding-bottom: 10px;
+}
+
+
+
+
+/************* FOOTER ****************/
+
+#deranged {
+	margin: 20px 0 30px 0;
+}
+
+footer>span{
+	display: block;
+	text-align: center;
+	color:#999;
+}
+
+
+footer a:link, footer a:visited {
+		color: gray;
+}
+
+
+/************* media screen ****************/
+
+@media screen and (max-width: 640px) {
+	nav {
+	    flex-direction: column;
+  	}
+  	nav div {
+  		margin: 0 auto;	
+  	}
+}
